@@ -163,13 +163,27 @@ class CategoryDetails extends StatelessWidget {
         }
       case 'Pet Food':
         {
-          return ListView.builder(
-            itemCount: _petFood.length,
-            itemBuilder: (context, index) {
-              return ListTile(
-              
-                title: Center(child: Text(_petFood[index],style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)), onTap: () {});
-            },
+          return Scaffold(
+            appBar: AppBar(
+                
+                title: Text('PETS FOOD'),
+                
+                centerTitle: true,
+               
+                backgroundColor: Colors.amber,
+                foregroundColor: Colors.white,),
+
+           body:  Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: ListView.builder(
+                itemCount: _petFood.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                  
+                    title: Center(child: Text(_petFood[index],style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)), onTap: () {});
+                },
+              ),
+           ),
           );
         }
 

@@ -24,16 +24,7 @@ class CategMenu extends StatefulWidget {
 
 class _CategMenuState extends State<CategMenu> {
   String _category = 'Menu';
-  final List<String> _dog = [
-    'Beagle',
-    'Dachshund',
-    'German shepherd',
-    'Golden Retriever',
-    'Boxer',
-    'Pug',
-    'Doberman',
-    'Pomeranian',
-  ];
+  
 
   void _updateContent(String newContent) {
     setState(() {
